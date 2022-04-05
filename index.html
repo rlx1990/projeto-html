@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My entire world</title>
+        <link rel="icon" type="image/png" sizes="16x16" href="Imagens/Menus/favicon-16x16.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="theme-color" content="#ffffff">
+    </head>
+
+    <style>
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 90vh;
+            font-family: 'Montserrat', sans-serif;
+            background-color: #fbfbfb;
+        }
+
+        .header {
+            font-weight: normal;
+            font-size: 3em;
+        }
+
+        .name-input {
+            width: 40%;
+            height: 50px;
+            font-size: 1.7em;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        .footer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Montserrat', sans-serif;
+            background-color: #fbfbfb;
+
+        }
+    </style>
+
+    <body>
+        <div class="content">
+            <h1 class="header">Diz teu nome, bença!</h1>
+            <input type="text" name="text" class="name-input">
+            <p id="output-text"></p>
+        </div>
+    </body>
+
+    <script>
+        input = document.querySelector('input');
+        output = document.getElementById('output-text');
+
+        input.addEventListener('keypress', writeInputNameOnPage);
+
+        function writeInputNameOnPage(e) {
+            if (e.keyCode === 13) {
+                const name = input.value;
+                if (name === 'Heloise') {
+                    output.innerHTML = `<h1>Ah, é você ${name} ! no seu caso..é o amor da minha vida mesmo. &#128540 </h1>`;
+                }
+                else 
+                if (name === 'Doug') {
+                    output.innerHTML = `<h1>Ah, é você ${name} ! você é meu criador. É sempre um prazer estar com você. &#128540 </h1>`;
+                }
+                else
+                if (name === 'Douglas') {
+                    output.innerHTML = `<h1>Ah, é você ${name} ! você é meu criador. É sempre um prazer estar com você. &#128540 </h1>`;
+                }
+                else
+                if (name === 'Mobit') {
+                    output.innerHTML = `<h1> ${name} você é o melhor Designer do mundo!!! </h1>`;
+                }
+                else 
+                if (name === 'Mylenna') {
+                    output.innerHTML = `<h1>E ai ${name}, adorei seu bolinho de harry potter! </h1>`;
+                }
+                else 
+                if (name === 'Angashow') {
+                    output.innerHTML = `<h1> ${name} faz a pose a jolyne! &#128064; </h1>`;
+                }
+                else
+                if (name === 'Perry') {
+                    output.innerHTML = `<h1> ${name} é o rei das cripto porraaaa, mas adiaram a porra do market fudeu!!! </h1>`;
+                }
+                else 
+                if (name === 'Tayron') {
+                    output.innerHTML = `<h1> ${name}! Só queria testar a recursividade do site, ver como fica projetado em celular! Valeu Nom! &#128526 </h1>`;
+                }
+                else
+                if (name === 'tayron') {
+                    output.innerHTML = `<h1> ${name}! Só queria testar a recursividade do site, ver como fica projetado em celular! Valeu Nom! &#128526  </h1>`;
+                }
+                else
+                if (name === 'Samara') {
+                    output.innerHTML = `<h1> Oi ${name} meu amor, tudo bem? &#128536 </h1>`;
+                }
+                else
+                if (name === 'samara') {
+                    output.innerHTML = `<h1> ${name} meu amor, tudo bem? &#128536 </h1>`;
+                }
+                else
+                if (name === 'Shirley') {
+                    output.innerHTML = `<h1> ${name} olha a hora de arrumar Samarinho pro colégio,corre!! &#128064 </h1>`;
+                }
+                else
+                if (name === 'shirley') {
+                    output.innerHTML = `<h1> ${name} olha a hora de arrumar Samarinho pro colégio,corre!! &#128064 </h1>`;
+                }
+                else {
+                    output.innerHTML = `<h1>Olá ${name},isso aqui é só um teste de desenvolvimento web. Só pra ver se ta funcionando,sacou? tente escrever outros nomes,podem ter respostas personalizadas!</h1>`;
+                }
+            }
+        }
+    </script>
+    <footer class="footer"><h1><Strong>Site desenvolvido por Douglas Soares.</Strong></h1></footer>
+
+</html>
