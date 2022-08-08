@@ -52,13 +52,20 @@
             background-color: #fbfbfb;
 
         }
+        .divimg {
+            display: flex;
+            justify-content: center;
+            width: 100vw;
+
+        }
+        
     </style>
 
     <body>
         <div class="content">
             <h1 class="header">Diz teu nome, bença!</h1>
             <input type="text" name="text" class="name-input">
-            <p id="output-text"></p>
+            <div class="divimg"><p id="output-text"></p></div>
         </div>
     </body>
 
@@ -66,6 +73,7 @@
         input = document.querySelector('input');
         output = document.getElementById('output-text');
         const imagem = "<img src='https://c.tenor.com/ChUmLZCWxFwAAAAd/arthas.gif' alt='inoue'> " + `<h1> O maior Frost DK existente em Azeroth. E boiola. </h1>`
+        const maria = "<img src='https://pa1.narvii.com/6937/fb60c8f0397c67b585b649738d238348f4760d36r1-268-350_hq.gif' alt='maria'>" + '<h1>Hey,doc. I hope youre having an amazing day. See you at night.</h1>'
 
         input.addEventListener('keypress', writeInputNameOnPage);
 
@@ -118,6 +126,9 @@
                 else
                 if (name === 'Shirley') {
                     output.innerHTML = `<h1> ${name} olha a hora de arrumar Samarinha pro colégio,corre!! &#128064 </h1>`;
+                }
+                if (name === 'Maria') {
+                    output.innerHTML = maria;
                 }
                 else
                 if (name === 'Taysa') {
